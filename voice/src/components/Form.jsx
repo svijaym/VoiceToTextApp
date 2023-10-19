@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSpeechRecognition } from "react-speech-recognition";
 import { Box, FormLabel, Input, Text, Button, Flex } from "@chakra-ui/react";
 import axios from "axios";
+import { BsMic } from "react-icons/bs";
 const Form = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -44,7 +45,7 @@ const Form = () => {
   return (
     <div>
       <Text fontSize="22px" fontWeight="700">
-        Fill the detais
+        click on start button to record response
       </Text>
       <Box
         width="40%"
@@ -65,9 +66,10 @@ const Form = () => {
               onChange={handleInputChange}
               placeholder="First Name"
             />
-            <button onClick={handleRecording}>
-              {isRecording ? "Stop Recording" : "Start Recording"}
-            </button>
+            <Text>{isRecording ? "Stop Recording" : "Start Recording"}</Text>
+            <Button onClick={handleRecording}>
+              <BsMic />
+            </Button>
           </Flex>
           <Text>{isRecording ? "Listening..." : "Not Listening"}</Text>
         </div>
@@ -82,9 +84,10 @@ const Form = () => {
               onChange={handleInputChange}
               placeholder="Last Name"
             />
-            <button onClick={handleRecording}>
-              {isRecording ? "Stop Recording" : "Start Recording"}
-            </button>
+            <Text>{isRecording ? "Stop Recording" : "Start Recording"}</Text>
+            <Button onClick={handleRecording}>
+              <BsMic />
+            </Button>
           </Flex>
           <Text>{isRecording ? "Listening..." : "Not Listening"}</Text>
         </div>
@@ -99,9 +102,10 @@ const Form = () => {
               onChange={handleInputChange}
               placeholder="State"
             />
-            <button onClick={handleRecording}>
-              {isRecording ? "Stop Recording" : "Start Recording"}
-            </button>
+            <Text>{isRecording ? "Stop Recording" : "Start Recording"}</Text>
+            <Button onClick={handleRecording}>
+              <BsMic />
+            </Button>
           </Flex>
           <Text>{isRecording ? "Listening..." : "Not Listening"}</Text>
         </div>
@@ -116,9 +120,10 @@ const Form = () => {
               onChange={handleInputChange}
               placeholder="District"
             />
-            <button onClick={handleRecording}>
-              {isRecording ? "Stop Recording" : "Start Recording"}
-            </button>
+            <Text>{isRecording ? "Stop Recording" : "Start Recording"}</Text>
+            <Button onClick={handleRecording}>
+              <BsMic />
+            </Button>
           </Flex>
           <Text>{isRecording ? "Listening..." : "Not Listening"}</Text>
         </div>
@@ -133,9 +138,10 @@ const Form = () => {
               onChange={handleInputChange}
               placeholder="Village"
             />
-            <button onClick={handleRecording}>
-              {isRecording ? "Stop Recording" : "Start Recording"}
-            </button>
+            <Text>{isRecording ? "Stop Recording" : "Start Recording"}</Text>
+            <Button onClick={handleRecording}>
+              <BsMic />
+            </Button>
           </Flex>
           <Text>{isRecording ? "Listening..." : "Not Listening"}</Text>
         </div>
@@ -150,9 +156,10 @@ const Form = () => {
               onChange={handleInputChange}
               placeholder="PAN Number"
             />
-            <button onClick={handleRecording}>
-              {isRecording ? "Stop Recording" : "Start Recording"}
-            </button>
+            <Text>{isRecording ? "Stop Recording" : "Start Recording"}</Text>
+            <Button onClick={handleRecording}>
+              <BsMic />
+            </Button>
           </Flex>
           <Text>{isRecording ? "Listening..." : "Not Listening"}</Text>
         </div>
@@ -167,9 +174,10 @@ const Form = () => {
               onChange={handleInputChange}
               placeholder="Aadhaar Number"
             />
-            <button onClick={handleRecording}>
-              {isRecording ? "Stop Recording" : "Start Recording"}
-            </button>
+            <Text>{isRecording ? "Stop Recording" : "Start Recording"}</Text>
+            <Button onClick={handleRecording}>
+              <BsMic />
+            </Button>
           </Flex>
           <Text>{isRecording ? "Listening..." : "Not Listening"}</Text>
         </div>
